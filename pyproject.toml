@@ -1,0 +1,25 @@
+[project]
+name = "takehome-backend-juanc"
+version = "0.1.0"
+description = "AI Chatbot Search Application"
+authors = [
+    {name = "Juan C", email = "juan@example.com"}
+]
+dependencies = [
+    "langchain==0.3.21",
+    "langchain-anthropic==0.3.10",
+    "langchain-core==0.3.48",
+    "langchain-groq==0.3.1",
+    "langchain-google-genai==2.1.1",    
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.27.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0"
+]
+requires-python = ">=3.10"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0"
+]
